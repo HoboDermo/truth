@@ -1,0 +1,16 @@
+{
+  "name": "twentyFive",
+  "version": "0.0.1",
+  "description": "Twenty Five card game package for Truth engine",
+  "author": {
+    "name": "HoboDermo <hobodermo@gmail.com>"
+  },
+  "mean": "0.5.5",
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.4.x"
+  },
+  "dependencies": {
+  },
+  "license": "MIT"
+}

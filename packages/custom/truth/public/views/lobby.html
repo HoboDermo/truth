@@ -1,0 +1,13 @@
+<div class="" data-ng-controller="LobbyController">
+  <h1>Lobby</h1>
+  <h2>{{lobby.status}}</h2>
+  <ul>
+    <li data-ng-repeat="player in lobby.players">
+      <span>{{player.playerData._id}}</span> /
+      <span>{{player.playerData.name}}</span>
+     </li>
+  </ul>
+  <div ng-if="lobby.gameInstanceId">
+    <a href="/{{lobby.gameDefinition.id}}/{{lobby.gameInstanceId}}">{{lobby.gameDefinition.name}}</a>
+  </div>
+</div>

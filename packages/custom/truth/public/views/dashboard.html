@@ -1,0 +1,16 @@
+<div class="" data-ng-controller="DashboardController">
+  <h1>Dashboard</h1>
+  <ul>
+    <li data-ng-repeat="activeGame in dashboard.activeGames">
+      <span>{{activeGame.id}}</span> /
+      <span><a href="/{{activeGame.gameDefinition.id}}/{{activeGame.id}}">{{activeGame.gameDefinition.name}}</a></span>
+     </li>
+  </ul>
+  <ul>
+    <li data-ng-repeat="gameDefinition in dashboard.gameDefinitions">
+      <span>{{gameDefinition.id}}</span> /
+      <span><a href="/truth/lobby/{{gameDefinition.id}}">{{gameDefinition.name}}</a></span>
+    </li>
+  </ul>
+</div>
+
